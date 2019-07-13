@@ -16,16 +16,15 @@ public class Filter {
     }
 
     public List<Integer> filterEven() {
-
         return array.stream().filter(item -> item % 2 == 0).collect(Collectors.toList());
     }
 
     public List<Integer> filterMultipleOfThree() {
-        throw new NotImplementedException();
+        return array.stream().filter(item -> item % 3 == 0).collect(Collectors.toList());
     }
 
     public List<Integer> getCommonElements(List<Integer> firstList, List<Integer> secondList) {
-        throw new NotImplementedException();
+        return firstList.stream().filter(item -> secondList.contains(item)).collect(Collectors.toList());
     }
 
     public List<Integer> getDifferentElements() {
