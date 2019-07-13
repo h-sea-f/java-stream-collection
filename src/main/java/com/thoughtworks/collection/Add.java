@@ -14,12 +14,15 @@ public class Add {
 //        }
         int left = Integer.min(leftBorder, rightBorder);
         int right = Integer.max(leftBorder, rightBorder);
-        return IntStream.range(left,right+1).filter(x->x%2==0).sum();
+        return IntStream.range(left, right + 1).filter(x -> x % 2 == 0).sum();
 
     }
 
     public int getSumOfOdds(int leftBorder, int rightBorder) {
-        throw new NotImplementedException();
+
+        int left = Integer.min(leftBorder, rightBorder);
+        int right = Integer.max(leftBorder, rightBorder);
+        return IntStream.range(left, right + 1).filter(x -> x % 2 != 0).sum();
     }
 
     public int getSumTripleAndAddTwo(List<Integer> arrayList) {
