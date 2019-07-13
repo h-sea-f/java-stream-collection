@@ -36,11 +36,11 @@ public class CollectionOperator {
         return array[array.length - 1];
     }
 
-    public List<Integer> popCommonElement(int[] firstArray, int[] secondArray) {
-        throw new NotImplementedException();
-    }
-
-    public List<Integer> addUncommonElement(Integer[] firstArray, Integer[] secondArray) {
-        throw new NotImplementedException();
-    }
+//    public List<Integer> popCommonElement(int[] firstArray, int[] secondArray) {
+//        return Arrays.stream(firstArray).filter(item->Arrays.asList(secondArray).contains(item)).boxed().collect(Collectors.toList());
+//    }
+//
+//    public List<Integer> addUncommonElement(Integer[] firstArray, Integer[] secondArray) {
+//        return null;
+//    }
 }
