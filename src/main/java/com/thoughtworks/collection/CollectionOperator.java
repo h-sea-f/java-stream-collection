@@ -37,7 +37,10 @@ public class CollectionOperator {
     }
 
     public List<Integer> popCommonElement(int[] firstArray, int[] secondArray) {
-        return Arrays.stream(firstArray).filter(item -> Arrays.asList(secondArray).contains(item)).boxed().collect(Collectors.toList());
+        List first = Arrays.asList(firstArray);
+        List second = Arrays.asList(secondArray);
+//        return first.stream().filter(number->second.contains(number)).collect(Collectors.toList());
+        return null;
     }
 
 //    public List<Integer> addUncommonElement(Integer[] firstArray, Integer[] secondArray) {
